@@ -1,0 +1,16 @@
+{
+  "name": "node-fanfou-oauth",
+  "version": "0.1.0",
+  "description": "Simple demonstration using Node.js with Fanfou API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lien Z",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "jade": "^1.11.0",
+    "oauth": "^0.9.14"
+  }
+}

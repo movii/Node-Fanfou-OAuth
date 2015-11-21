@@ -1,0 +1,32 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width user-scalable=no")
+    meta(name="format-detection", content="telephone=no")
+    meta(name="apple-mobile-web-app-capable", content="yes")
+    meta(name="apple-mobile-web-app-status-bar-style", content="black")
+    title Welcome to ohGas for Fanfou
+    link(rel='stylesheet', href="/main.css")
+  body(ontouchstart="")
+    div.header(style="padding:0px 10px;") Home Timeline
+    ul.statuses__wrapper
+      for status in statuses
+        li.status.clearfix
+          div.left
+            a.status__author(href='#{status.user.url}') 
+              img(src="#{status.user.profile_image_url}")
+          div.right
+            div.status__user
+              span.status__user__name #{status.user.name}
+              span.status__user__id @#{status.user.id}
+              
+            div.clearfix
+              if status.photo
+                div.fl.status__text #{status.text}
+                div.fr.status__photo 
+                  a(href='#{status.photo.largeurl}')
+                    img(src='#{status.photo.thumburl}')
+              else 
+                div.status__text #{status.text}
+            div.time #{status.created_at}
