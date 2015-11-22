@@ -1,6 +1,7 @@
 # Node-Fanfou-OAuth
 Simple demonstration using Node.js with Fanfou API
 使用饭否提供的 OAuth 1.0 和 Node.js 进行登录授权的 Demo；目前只有登录授权后获取当前登录用户 Home Timeline 的功能。
+
 ![img](media/Welcome to ohGas for Fanfou.png)
 
 ##配置 Config 
