@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>Welcome to ohGas for Fanfou</title>
+		<link rel='stylesheet' href="/main.css">
+	<body >
+    <div class="header" style="padding:0px 10px;">Home Timeline</div>
+    <ul class="statuses__wrapper">
+      {% for status in statuses %}
+        <li class="status">
+          <div class="left">
+            <a class="status__author" href="{{ status.user.url }}" >
+              <img src="{{ status.user.profile_image_url }}" alt="">
+            </a>
+          </div>
+          <div class="right">
+            <div class="status__user">
+              <span class="status__user__name">{{ status.user.name }}</span>
+              <span class="status__user__id">@ {{ status.user.id }}</span>
+            </div>
+            <div class="clearfix">
+              {% if status.photo %}
+                <div class="fl status__text">{{ status.text }}</div>
+                <div class="fr status__photo">
+                  <a  href="{{ status.photo.largeurl }}">
+                    <img src="{{ status.photo.thumburl }}" alt="">
+                  </a>
+                </div>
+              {% else %}
+                <div class="status__text">{{ status.text }}</div>
+              {% endif %}
+            </div>
+            <div class="time">{{ status.created_at }}</div>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+	</body>
+</html>
