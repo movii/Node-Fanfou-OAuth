@@ -1,4 +1,12 @@
 ## Node-Fanfou-OAuth
+
+#### update 2017-6-30 
+六月上旬还是五月下旬，经小伙伴提醒，原来 Jade 更名为 [Pug](https://pugjs.org/api/getting-started.html)；正好去年底开始接触使用 Nunjucks 来做一般项目的模版引擎，还挺喜欢，毕竟都是 HTML 标签的写法，这里先替换上。
+
+顺带给 Express 里的 `body-parser` 加上了 `extended: true`，之前貌似是忘了，不会再报 `body-parser deprecated undefined extended: provide extended option` 的错了。
+
+___
+
 Simple demonstration using Node.js with Fanfou API。使用饭否提供的 OAuth 1.0 和 Node.js 进行登录授权的 Demo；目前只有登录授权后获取当前登录用户 Home Timeline 的功能。
 
 ![img](media/node_fanfou_oauth.png)
