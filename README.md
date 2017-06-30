@@ -1,5 +1,8 @@
 ## Node-Fanfou-OAuth
 
+相关的 blog 文章：[笔记：使用 Node.js 实现饭否.com 的 OAuth 1.0 授权](http://movii.github.io/blog/2016/03/01/node-fanfou-oauth/)
+___
+
 #### update 2017-6-30 
 六月上旬还是五月下旬，经小伙伴提醒，原来 Jade 更名为 [Pug](https://pugjs.org/api/getting-started.html)；正好去年底开始接触使用 Nunjucks 来做一般项目的模版引擎，还挺喜欢，毕竟都是 HTML 标签的写法，这里先替换上。
 
